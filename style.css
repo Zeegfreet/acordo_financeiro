@@ -1,0 +1,83 @@
+@import url('./style/fontes.css');
+
+@import url('./style/popup.css');
+@import url('style/componentes.css');
+@import url('style/formulario.css');
+@import url('style/header.css');
+@import url('./style/tabelaCentral.css');
+@import url('./style/acordo.css');
+
+
+:root {
+    --cor-primaria: #00C2DE;
+    --cor-primaria2: #4ccde1;
+    --cor-primaria3: #75d8e7;
+    --cor-secundaria: #E1F6FB;
+    --cor-discreta: #A9A9A9;
+    --font-padrao: 'Roboto';
+
+    --cor-forte1: #F99FD7;
+    --cor-pastel1: #E6BCE3;
+    --cor-pastel1-clara: #e8d5e7;
+    --cor-forte2: #efce6d;
+    --cor-pastel2: #F1E8C1;
+    --cor-pastel2-clara: #f5f2e9;
+    --cor-forte3: #7AE3CA;
+    --cor-pastel3: #B9DDDD;
+    --cor-pastel3-clara: #eaf1ef;
+    --cor-forte4: #A7BCE4;
+    --cor-pastel4: #BDC5E9;
+    --cor-pastel4-clara: #e1e4ee;
+
+    --cor-negativa: #f55671;
+    --cor-negativa-fraca: #f3bec7;
+    --cor-positiva: #00fda4;
+    --cor-neutra: #eecd67;
+    --cor-neutra-fraca: #f4eed3;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--font-padrao);
+}
+
+.container {
+    padding: 0.5em;
+    width: 90vw;
+    margin: 0 auto;
+
+}
+
+.container * {
+    margin: 0.5em;
+}
+
+@media screen and (min-width: 820px) and (max-width: 1024px) {
+    .container {
+        padding: 2em;
+        width: 70vw;
+        margin: 0 auto;
+    }
+    .form__item-produto label {
+        display: inline-flex;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 1em;
+        width: 60vw;
+    }
+    .form__item-produto label {
+        display: inline-flex;
+    }
+}
+

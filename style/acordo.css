@@ -1,0 +1,142 @@
+.conteudo__popup {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.conteudo-acordo__mensagens{
+ text-align: center;
+}
+
+.tb-dado {
+    text-align: center;
+}
+.conteudo-acordo-container{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.conteudo-acordo__parcelas {
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-acordo__parcelas table {
+    width: 100%;
+}
+
+.conteudo-acordo__parcelas td {
+    text-align: center;
+}
+
+.conteudo-acordo__formulario {
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 1em;
+    padding: 0;
+    margin-top: 2em;
+
+}
+
+.conteudo-acordo_parcelas {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.conteudo-acordo_parcelas table {
+    width: 100%;
+}
+
+
+.conteudo-acordo_totais {
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.conteudo-acordo__formulario label {
+    position: relative;
+    top: 15px;
+    background-color: var(--cor-forte3);
+    padding: 0.4em;
+    border-radius: 1em;
+    font-size: small;
+}
+
+
+.tb-seta {
+    width: 30px;
+}
+
+.conteudo-acordo__formulario input {
+    font-size: 1em;
+    padding: 0.3em;
+    margin: 0;
+    
+}
+
+.conteudo-acordo__formulario input[type=number], .conteudo-acordo__formulario input[type=text],.conteudo-acordo__formulario input[type=date] {
+    padding-top: 25px;
+    padding-left: 25px;
+    width: 100%;
+    border-radius: 1em;
+}
+
+
+.conteudo-acordo__formulario-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.conteudo-acordo__formulario-botoes{
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+
+
+.item-Formulario{
+    width: 40%;
+}
+
+.conteudo-acordo__formulario-botoes input {
+    min-height: 4em;
+    min-width: 10em;
+    font-weight: bold;
+}
+.conteudo-acordo__formulario-botoes input[value=Calcular] {
+    background-color: var(--cor-forte1);
+}
+
+.conteudo-acordo__formulario-botoes input[value='Imprimir CAR'] {
+    background-color: var(--cor-forte2);
+}
+
+.conteudo-acordo__formulario-botoes input[value='Imprimir CLI'] {
+    background-color: var(--cor-forte3);
+}
+
+.conteudo-acordo__formulario-botoes input[value='Copiar'] {
+    background-color: var(--cor-forte4);
+}
+
+.conteudo-acordo_totais-tabela {
+    width: 100%;
+}
+
+.conteudo-acordo_totais-tabela tr, .conteudo-acordo_totais-tabela tr td {
+
+    border-bottom: 2px dashed var(--cor-secundaria);
+}
+
+tr:has(.td-item-vlr_Atualizado) {
+    color: var(--cor-positiva);
+}

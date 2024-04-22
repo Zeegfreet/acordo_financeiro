@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+table *{
+    border: 1px solid gray;
+}
+
+th {
+    background-color: lightblue;
+}
+
+.conteudo__dados_totais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;    
+}
+
+.conteudo__dados_totais div{
+    border: 2px solid gray;
+    text-align: center;
+    padding: 0.5em;
+}

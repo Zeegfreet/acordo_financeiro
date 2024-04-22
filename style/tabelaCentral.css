@@ -1,0 +1,70 @@
+.conteudo__dados {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.conteudo__dados_totais {
+    background-color: var(--cor-primaria2);
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 0.5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.conteudo__dados_totais-item {
+    border: 3px solid var(--cor-secundaria);
+    padding: 0.5em;
+    text-align: center;
+    min-width: 150px;
+    min-height: 40px;
+    border-radius: 0.4em;
+    margin: 0;
+}
+
+/* .conteudo__dados_totais-item label {
+    color: var(--cor-neutra);
+} */
+
+.variacao-um {
+    background-color: var(--cor-forte1);
+    border-color: var(--cor-pastel1-clara);
+}
+
+.variacao-um label {
+    color: var(--cor-pastel1-clara);
+}
+
+.variacao-dois {
+    background-color: var(--cor-forte2);
+    border-color: var(--cor-pastel2-clara);
+}
+
+.variacao-dois label {
+    color: var(--cor-pastel2-clara);
+}
+
+.variacao-tres {
+    background-color: var(--cor-forte3);
+    border-color: var(--cor-pastel3-clara);
+}
+
+.variacao-tres label {
+    color: var(--cor-pastel3-clara);
+}
+
+.variacao-quatro {
+    background-color: var(--cor-forte4);
+    border-color: var(--cor-pastel4-clara);
+}
+
+.variacao-quatro label {
+    color: var(--cor-pastel4-clara);
+    border-color: var(--cor-pastel4-clara)
+}

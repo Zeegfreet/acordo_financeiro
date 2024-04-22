@@ -1,0 +1,147 @@
+
+.formText {
+    border-radius: 5px;
+    padding: 0.3em 1em;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria2);
+    border: 2px double var(--cor-secundaria);
+}
+
+.formText[validado=false]{
+    border-color: var(--cor-negativa);
+    background-color: var(--cor-negativa-fraca);
+    color: var(--cor-negativa);
+}
+
+.formText[validado=alert]{
+    border-color: var(--cor-neutra);
+    background-color: var(--cor-neutra-fraca);
+    color: var(--cor-neutra);
+}
+
+.formText ~ small {
+    font-size: x-small;
+    padding: 0 2em;
+}
+
+.formText[validado=true] ~ small {
+    display: none;
+    
+}
+.formText[validado=alert] ~ small {
+    color: var(--cor-neutra);
+    
+}
+
+.formText[validado=false] ~ small {
+    color: var(--cor-negativa);
+   
+}
+
+
+
+.formText::placeholder {
+    color: var(--cor-secundaria);
+}
+
+.formList{
+    border-radius: 5px;
+    padding: 0.3em 1em;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria2);
+    border: 2px double var(--cor-secundaria);
+}
+
+.formList option {
+    border-radius: 5px;
+}
+
+.form-file {
+    border-radius: 5px;
+    padding: 0.3em 1em;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria2);
+    border: 2px double var(--cor-secundaria);
+}
+
+.form-file:change {
+    background-color: black;
+}
+
+.form-button {
+    border-radius: 0.5em;
+    padding: 5px;
+    color: var(--cor-secundaria2);
+    background-color: var(--cor-primaria2);
+    border: 2px solid var(--cor-secundaria);
+    font-size: 1em;
+}
+
+.form-button:active {
+    box-shadow: 0 0 0.5em 0.5em var(--cor-primaria2);
+}
+
+.form-tabela *, .form-tabela {
+    border: 1px solid var(--cor-discreta);
+    background-color: var(--cor-secundaria);
+}
+
+.form-tabela tr th {
+    background-color: var(--cor-primaria);
+    
+}
+
+.form-tabela tr td {
+    color: var(--cor-primaria);
+}
+
+.tb-linha-totais {
+    background-color: var(--cor-primaria);
+}
+
+.formPorcentagem {
+    caption-side: left;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.input[type=checkbox] {
+    position: relative;
+    user-select:none;
+}
+.input[type=checkbox] input {
+    visibility: hidden;
+}
+.input[type=checkbox] label {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-left: 30px;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.input[type=checkbox] label::before {
+    position: absolute;
+    left: 0;
+    border: 2px solid #00a5fd;
+    content: "";
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+    transition: all .2s ease-in-out;
+}
+
+.input[type=checkbox] input:checked ~ label::before{
+    transform: rotate(40deg);
+    border-left-color:transparent;
+    border-top-color:transparent;
+    border-radius: 0;
+    width: 10px;
+    height: 20px;
+    left: 10px;
+    top: calc(50% - 1px);
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financeiro Pimpolho</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- <script src="../js.js" type="module" defer></script> -->
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <H1>FINANCEIRO PIMPOLHO</H1>
+    </header>
+    <script type="module" src="../js/content-pages/acordo.js"></script>
+    <main class="conteudo-acordo-container">
+        <section class="conteudo-acordo">
+            <div class="conteudo-acordo__formulario">
+                <form class="conteudo-acordo__formulario-formulario">
+                    <div class="conteudo-acordo__formulario-form">
+                        <div class="item-Formulario">
+                            <label for="form-desc-encargos">(%)Desc Encargos</label>
+                            <input type="number" name="desc-encargos" id="form-desc-encargos" class="formText formPorcentagem">
+                        </div>
+        
+                        <div class="item-Formulario">
+                            <label for="form-desc_original">(%)Desc Original</label>
+                            <input type="number" name="desc_original" id="form-desc_original" class="formText formPorcentagem">
+                        </div>
+    
+                        <div class="item-Formulario">
+                            <label for="form-desc_original">(%)Taxa Negociada</label>
+                            <input type="number" name="desc_original" id="form-desc_original" class="formText formPorcentagem">
+                        </div>
+    
+                        <div class="item-Formulario">
+                            <label for="form-qtd_parcelas">(QTD)Parcelas</label>
+                            <input type="number" name="qtd_parcelas" id="form-qtd_parcelas" class="formText">
+        
+                        </div>
+    
+                        <div class="item-Formulario">
+                            <label for="form-qtd_parcelas">(Dias)Periodicidade</label>
+                            <input type="number" name="qtd_parcelas" id="form-qtd_parcelas" class="formText">
+        
+                        </div>
+        
+                        <div class="item-Formulario">
+                            <label for="form-dt_Entrada">Data da Entrada</label>
+                            <input type="date" name="dt_Entrada" id="form-dt_Entrada" class="formText formPorcentagem">
+        
+                        </div>
+        
+                    </div>
+                    <div class="conteudo-acordo__formulario-botoes">
+                        <input type="submit" value="Calcular" class="form-button">
+                        <input type="button" value="Imprimir" class="form-button">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="conteudo-acordo_totais">
+            <table class="conteudo-acordo_totais-tabela">
+                <tr class="acordo-tb-linha-valor">
+                    <td>Valor Total</td>
+                    <td>100,00</td>
+                    <td><img src="../img/seta.png" alt="" class="tb-seta"></td>
+                    <td>10,00</td>
+                    <td><img src="../img/seta.png" alt="" class="tb-seta"></td>
+                    <td>90,00</td>
+                </tr>
+                <tr class="acordo-tb-linha-valor">
+                    <td>Valor Original</td>
+                    <td>100,00</td>
+                    <td><img src="../img/seta.png" alt="" class="tb-seta"></td>
+                    <td>10,00</td>
+                    <td><img src="../img/seta.png" alt="" class="tb-seta"></td>
+                    <td>90,00</td>
+                </tr>
+                <tr class="acordo-tb-linha-valor">
+                    <td>Valor Juros</td>
+                    <td>100,00</td>
+                    <td><img src="../img/seta.png" alt="" class="tb-seta"></td>
+                    <td>10,00</td>
+                    <td><img src="../img/seta.png" alt="" class="tb-seta"></td>
+                    <td>90,00</td>
+                </tr>
+                <tr class="acordo-tb-linha-valor">
+                    <td>Valor Multa</td>
+                    <td>100,00</td>
+                    <td><img src="../img/seta.png" alt="" class="tb-seta"></td>
+                    <td>10,00</td>
+                    <td><img src="../img/seta.png" alt="" class="tb-seta"></td>
+                    <td>90,00</td>
+                </tr>
+            </table>
+        </section>
+        <section class="conteudo-acordo_parcelas">
+            <table class="acordo-tb-parcelas form-tabela">
+                <tr>
+                    <th>Parcela</th>
+                    <th>Vencimento</th>
+                    <th>Valor Total</th>
+                    <th>Valor Amortizar</th>
+                    <th>Encargos Amortizar</th>
+                </tr>
+                <tr>
+                    <td>Parcela</td>
+                    <td>Vencimento</td>
+                    <td>Valor Total</td>
+                    <td>Valor Amortizar</td>
+                    <td>Encargos Amortizar</td>
+                </tr>
+                <tr>
+                    <td>Parcela</td>
+                    <td>Vencimento</td>
+                    <td>Valor Total</td>
+                    <td>Valor Amortizar</td>
+                    <td>Encargos Amortizar</td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+</body> 
+
+</html>
